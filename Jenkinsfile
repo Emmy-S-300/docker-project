@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        ImageRegistry = 'eschonau'
+        ImageRegistry = 'eschonau' 
         EC2_IP = '54.91.241.36'
         DockerComposeFile = 'docker-compose.yml'
         DotEnvFile = '.env'
@@ -10,7 +10,7 @@ pipeline {
 
     stages {
 
-        stage("buildImage") {
+        stage("Build Image") {
             steps {
                 script {
                     echo "Building Docker Image..."
