@@ -10,7 +10,7 @@ pipeline {
 
     stages {
 
-        stage("buildImage") {
+        stage("BuildImage") {
             steps {
                 script {
                     echo "Building Docker Image..."
