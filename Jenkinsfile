@@ -19,7 +19,7 @@ pipeline {
             }
         }
 
-        stage("PushImage") {
+        stage("pushImage") {
             steps {
                 script {
                     echo "Pushing Image to DockerHub..."
